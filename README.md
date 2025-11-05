@@ -11,8 +11,9 @@ The dataset includes the following columns:
 - **Monthly_Revenue** includes negative values, representing months of loss.  
 
 ## 📈 Visualizations (to add)  
-1. **Average Monthly Revenue by Cuisine Type** (Bar Chart)  
-2. **Marketing Spend vs Monthly Revenue** (Scatter Plot with Trendline)  
+1. **Average Monthly Revenue by Cuisine Type**
+   ![Average Monthly Revenue by Cuisine Type](pivot_chart.png)  
+3. **Marketing Spend vs Monthly Revenue** (Scatter Plot with Trendline)  
 
 ## 💡 Insights  
 - Japanese cuisine shows slightly higher average revenue (~271).  
