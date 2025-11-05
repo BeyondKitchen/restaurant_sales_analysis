@@ -1,29 +1,67 @@
-# 🍽️ Restaurant Sales & Marketing Analysis  
+# 🍽️ Restaurant Revenue Analysis by Cuisine Type  
 
 ## 🎯 Objective  
-Analyze how cuisine type and marketing intensity influence restaurant revenue.  
+Analyze how customer volume and online engagement (reviews) relate to restaurant revenue across different cuisine types.  
+
+---
 
 ## 📊 Dataset  
 The dataset includes the following columns:  
 `Number_of_Customers`, `Menu_Price`, `Marketing_Spend`, `Cuisine_Type`, `Average_Customer_Spending`, `Promotions`, `Reviews`, `Monthly_Revenue`  
 
-- **Marketing_Spend** represents a marketing intensity score (from 0 to ~20).  
-- **Monthly_Revenue** includes negative values, representing months of loss.  
+- **Monthly_Revenue** includes some negative values, representing months with losses.  
+- **Cuisine_Type** includes four categories: American, Italian, Japanese, and Mexican.  
 
-## 📈 Visualizations   
-1. **Average Monthly Revenue by Cuisine Type**
-   ![Average Monthly Revenue by Cuisine Type](pivot_chart.png)  
-3. **Marketing Spend vs Monthly Revenue** (Scatter Plot with Trendline)  
+---
+
+## 📈 Visualizations  
+
+### 1. **Average Monthly Revenue by Cuisine Type**  
+![Average Monthly Revenue by Cuisine Type](pivot_chart.png)  
+
+> Japanese cuisine shows the highest average monthly revenue among all categories, though differences remain relatively small.
+
+---
+
+### 2. **Customer Volume vs Revenue — Bubble Charts by Cuisine Type**  
+
+Each chart visualizes the relationship between **number of customers (x-axis)**, **monthly revenue (y-axis)**,  
+and **number of reviews (bubble size)** for a single cuisine category.
+
+#### American Cuisine  
+![American Cuisine](bubble_chart_american.png)  
+Customer volume and revenue show a positive trend, while review counts do not appear to significantly affect sales.  
+
+#### Italian Cuisine  
+![Italian Cuisine](bubble_chart_italian.png)  
+Similar to American cuisine, higher customer numbers generally correspond with higher revenue.  
+
+#### Japanese Cuisine  
+![Japanese Cuisine](bubble_chart_japanese.png)  
+Revenue increases steadily with customer volume, but review counts remain relatively uniform.  
+
+#### Mexican Cuisine  
+![Mexican Cuisine](bubble_chart_mexican.png)  
+Customer and revenue correlation remains positive, though online review activity does not strongly reflect sales performance.  
+
+---
 
 ## 💡 Insights  
-- Japanese cuisine shows slightly higher average revenue (~271).  
-- Higher marketing intensity correlates with higher revenue.  
-- Cuisine type alone is not a strong predictor of revenue variance.  
+
+- There is a clear **positive correlation** between the number of customers and monthly revenue across all cuisine types.  
+- **Review count** does **not show a strong relationship** with revenue or customer volume.  
+- This suggests that **online engagement (reviews)** does not necessarily translate into higher sales.  
+- Overall, **customer volume** remains the most reliable predictor of restaurant performance in this dataset.  
+
+---
 
 ## 🛠️ Tools Used  
-Google Sheets (Pivot Tables + Charts), GitHub  
+- **Google Sheets** (Pivot Tables + Bubble Charts)  
+- **GitHub** (Version control & portfolio publishing)
+
+---
 
 ## 🚀 Next Steps  
-- Add chart images (pivot_chart.png, scatter_chart.png)  
-- Apply regression model to predict revenue  
-- Build dashboard in Looker Studio or Tableau
+- Add new variables such as `Rating` or `Location` to explore additional patterns.  
+- Apply correlation or regression analysis to quantify relationships.  
+- Build an interactive dashboard using Looker Studio or Tableau.
