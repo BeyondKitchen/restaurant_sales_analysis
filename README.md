@@ -1,37 +1,28 @@
-# 🍽️ Restaurant Sales & Performance Analysis
+# 🍽️ Restaurant Sales & Marketing Analysis  
 
-## 🎯 Objective
-Analyze restaurant sales data to identify revenue trends and factors affecting monthly performance.
+## 🎯 Objective  
+Analyze how cuisine type and marketing intensity influence restaurant revenue.  
 
-## 📊 Dataset
-**Columns:**
-Number_of_Customers, Menu_Price, Marketing_Spend, Cuisine_Type, Average_Customer_Spending, Promotions, Reviews, Monthly_Revenue
+## 📊 Dataset  
+The dataset includes the following columns:  
+`Number_of_Customers`, `Menu_Price`, `Marketing_Spend`, `Cuisine_Type`, `Average_Customer_Spending`, `Promotions`, `Reviews`, `Monthly_Revenue`  
 
-## 🧩 Business Questions
-1. Which cuisine types generate the highest revenue?  
-2. How does marketing spend affect monthly revenue?  
-3. Do more promotions lead to higher revenue?  
-4. What’s the relationship between customer count and revenue?  
-5. Which factors have the strongest impact overall?
+- **Marketing_Spend** represents a marketing intensity score (from 0 to ~20).  
+- **Monthly_Revenue** includes negative values, representing months of loss.  
 
-## 🧠 Analysis Process
-- Cleaned nulls and standardized numerical formats  
-- Conducted EDA and correlation analysis in Google Sheets  
-- Created visualizations using Tableau / Looker Studio  
+## 📈 Visualizations (to add)  
+1. **Average Monthly Revenue by Cuisine Type** (Bar Chart)  
+2. **Marketing Spend vs Monthly Revenue** (Scatter Plot with Trendline)  
 
-## 📈 Visualizations
+## 💡 Insights  
+- Japanese cuisine shows slightly higher average revenue (~271).  
+- Higher marketing intensity correlates with higher revenue.  
+- Cuisine type alone is not a strong predictor of revenue variance.  
 
+## 🛠️ Tools Used  
+Google Sheets (Pivot Tables + Charts), GitHub  
 
-## 💡 Key Insights
-- Marketing spend strongly correlates with revenue (r = 0.74).  
-- Cuisine types “Italian” and “Japanese” drive the highest average monthly revenue.  
-- Promotions show diminishing returns after 4 per month.  
-
-## 🛠️ Tools Used
-- Google Sheets / Excel  
-- Tableau / Looker Studio  
-- SQL (optional)
-
-## 🚀 Future Work
-- Build regression model to predict future revenue  
-- Automate dashboard updates via Google Sheets API
+## 🚀 Next Steps  
+- Add chart images (pivot_chart.png, scatter_chart.png)  
+- Apply regression model to predict revenue  
+- Build dashboard in Looker Studio or Tableau
