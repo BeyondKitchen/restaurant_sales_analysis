@@ -10,7 +10,7 @@ The dataset includes the following columns:
 - **Marketing_Spend** represents a marketing intensity score (from 0 to ~20).  
 - **Monthly_Revenue** includes negative values, representing months of loss.  
 
-## 📈 Visualizations (to add)  
+## 📈 Visualizations   
 1. **Average Monthly Revenue by Cuisine Type**
    ![Average Monthly Revenue by Cuisine Type](pivot_chart.png)  
 3. **Marketing Spend vs Monthly Revenue** (Scatter Plot with Trendline)  
